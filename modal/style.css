@@ -1,0 +1,133 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,300;0,900;1,300&display=swap');
+
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background: rgb(243, 240, 240);
+    font-family: 'Lato', sans-serif;
+}
+
+button{
+    background: transparent;
+    border: transparent;
+    cursor: pointer;
+}
+
+/* Hero-Banner */
+
+.hero{
+    display: grid;
+    place-items: center;
+    width: 100vw;
+    height: 100vh;
+}
+
+.hero-container{
+    width: 400px;
+    height: auto;
+    background: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 3rem;
+    border-radius: 1rem;
+    box-shadow: 0.5px 0px 2px 2px rgba(0, 0, 0, .1);
+}
+.hero-container h1{
+    font-size: 2rem;
+    margin-bottom: 1rem;
+    
+}
+
+.hero button{
+    background: rgb(106, 93, 162);
+    padding: 1rem 3rem;
+    border-radius: 10px;
+    text-transform: uppercase;
+    font-family: 'Lato', sans-serif;
+    font-weight: bold;
+    color: antiquewhite;
+    font-size: 1rem;
+    box-shadow: 1px 3px 3px 3px rgba(106, 93, 162, .2);
+}
+
+
+
+/* Modal */
+
+.modal{
+    display: grid;
+    place-items: center;
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: -10;
+    visibility: hidden;
+    
+}
+
+.modal-show{
+    visibility: visible;
+    z-index: 10;
+}
+
+.modal-container{
+    background: wheat;
+    max-width: 600px;
+    width: 100%;
+    height: auto;
+    align-items: center;
+    
+    display: flex;
+    flex-direction: column;
+    padding: 1rem;
+    border-radius: 3rem;
+    box-shadow: 0.5px 0px 2px 2px rgba(0, 0, 0, .1);
+    
+    
+    
+}
+
+.button{
+    display: flex;
+    justify-content: flex-end;
+    padding: 1rem;
+    width: 100%;
+}
+
+.fa-circle-xmark{
+    color: rgb(14, 34, 215);
+    font-size: 1.6rem;
+}
+
+.title-modal{
+    text-align: center;
+    font-size: 1.8rem;
+    margin-bottom: 3rem;
+    background: rgb(106, 93, 162);
+    padding: 0.8rem;
+    border-radius: 10px;
+    color: cornsilk;
+    text-transform: capitalize;
+}
+
+.img-modal{
+    width: 50%;
+    height: auto;
+    margin-bottom: 1rem;
+}
+
+.modal-container p{
+    font-size: 1.2rem;
+    margin-bottom: 1.4rem;
+}
+
+
+
