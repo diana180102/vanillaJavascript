@@ -1,0 +1,122 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: rgba(226, 239, 239, 0.375);
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+nav{
+    background: white;
+    box-shadow: rgba(0, 0, 0, 0.1) 0 10px 10px 1px;
+}
+
+.logo{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1rem;
+}
+
+.logo h1{
+    font-weight: 500;
+    letter-spacing: 2px;
+    text-shadow: 2px 3px 2px rgb(197, 198, 199);
+}
+
+.logo span{
+    color: rgb(22, 153, 219);
+}
+
+.nav-bars{
+    font-size: 1.5rem;
+    background: transparent;
+    border-color: transparent;
+    cursor: pointer;
+    transition: all 0.3s linear;
+}
+
+
+ 
+
+.links li{
+    list-style-type: none;
+    text-transform: capitalize;
+    font-weight: 600;
+    letter-spacing: 2px;
+    display: block;
+    padding: 0.5rem 1rem;
+    transition: all 0.3s linear;
+}
+
+
+
+.social{
+    display: none;
+}
+
+.links{
+    height: 0;
+    overflow: hidden;
+    transition: all 0.3s linear;
+}
+
+.show-link {
+  height: 10rem;
+}
+
+
+.btn{
+    background: transparent;
+    border: transparent;
+    cursor: pointer;
+    padding: 0;
+}
+
+.btn i{
+    color: rgb(22, 153, 219);
+    font-size: 1.2rem;
+    margin-right: 1rem;
+}
+
+
+@media screen and (min-width:800px){
+   
+   nav{
+    
+    
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1rem;
+  
+   }
+
+   .logo{
+     padding: 0;
+   }
+
+   .nav-bars{
+     display: none;
+   }
+
+   .links{
+        height: auto;
+        display: flex;
+   }
+
+   .links li{
+        padding: 0;
+        margin: 0 0.5rem;
+   }
+
+   .social{
+     display: flex;
+   }
+   
+}
+

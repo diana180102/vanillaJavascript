@@ -1,0 +1,62 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+
+}
+
+main{
+    display: grid;
+    place-items: center;
+    min-height: 100vh;
+    
+}
+
+.container{
+    margin:5rem;
+    display: flex;
+    flex-direction: column;
+    gap: 4rem;
+    align-items: center;
+}
+
+h1{
+    font-size: 5rem;
+}
+
+ p{
+    font-size: 4rem;
+    color: green;
+}
+
+.btn{
+    padding: 1rem;
+    font-weight: 700;
+    
+    border-radius: 5px;
+}
+
+.btn:hover{
+    background: rgb(172, 127, 217);
+}
+
+.incremento{
+    color: rgb(14, 13, 13);
+    background: rgb(6, 242, 26);
+}
+
+.reset{
+    color: rgb(255, 255, 255);
+    background: rgb(14, 14, 14);
+
+}
+
+.decremento{
+    color: rgb(255, 255, 255);
+    background: rgb(242, 6, 10);
+}
+
