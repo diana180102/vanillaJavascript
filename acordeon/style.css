@@ -78,8 +78,17 @@ button{
     display: block;
 }
 
+/* Se ejecuta cuando la clase show-details se activa */
+.show-details .plus-icon{
+    display: none;
+}
+
 .minus-icon{
     display: none;
+}
+
+.show-details .minus-icon{
+    display: inline;
 }
 
 
@@ -93,7 +102,8 @@ button{
     display: none;
 }
 
-.show-details{
+
+.show-details .question-details {
     display: block;
 }
 
