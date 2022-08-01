@@ -13,6 +13,7 @@ questions.forEach(function (question) {
 
     //Escuchamos el evento clic del botón
       btn.addEventListener('click', () =>{
+            //recorremos cada bloque de la question
             questions.forEach(function (item) {
                 console.log(question);
 

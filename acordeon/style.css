@@ -71,11 +71,21 @@ button{
 .question-btn{
     font-size: 1.4rem;
     color: var(--color-font);
-    margin: 0.8rem
+    margin: 0.8rem;
+    transition: all 0.3s linear ;
+    
+}
+
+.question-btn:hover{
+    transform: rotate(90deg);
 }
 
 .plus-icon{
     display: block;
+}
+
+ .minus-icon:hover{
+   color: brown;
 }
 
 /* Se ejecuta cuando la clase show-details se activa */

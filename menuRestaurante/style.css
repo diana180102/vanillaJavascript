@@ -1,0 +1,99 @@
+
+@import url("https://fonts.googleapis.com/css?family=Open+Sans|Roboto:400,700&display=swap");
+
+
+:root{
+     --ff-primary: "Roboto", sans-serif;
+     --ff-secondary: "Open Sans", sans-serif;
+     --color-font-primary:#8e7b11;
+     --color-font-secundary: rgb(31, 32, 38);
+     
+}
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background: rgb(238, 235, 235);
+}
+
+#container-main{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.header{
+    margin-top: 5rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    
+}
+
+.title-header h1{
+    font-family: var(--ff-primary);
+    font-size: 3rem;
+    letter-spacing: 5px;
+    color: var(--color-font-secundary);
+    margin-bottom: 0.5rem;
+}
+
+.underline{
+    padding: 2px 0;
+    background-color: var(--color-font-primary);
+    width: 100px;
+    margin: 0 auto;
+}
+
+.category{
+    display: flex;
+    flex-direction: row;
+    margin: 1.2rem;
+    align-items: center;
+    justify-content: center;
+}
+
+.item{
+    margin: 1rem;
+    border: 2px solid var(--color-font-primary);
+    padding: 0.4rem;
+    border-radius: 10px;
+    box-shadow: 2px  1px 1px 0px rgba(93, 96, 7, 0.2);
+}
+
+.container-menu{
+     background: wheat;
+     width: 90vw;
+     max-width: 1170px;
+}
+
+.menu{
+    display: flex;
+    flex-direction: row;
+    background: #8e7b11;
+    max-width: 450px;
+
+}
+
+.image{
+    width: 250px;
+    
+    background: red;
+}
+
+
+.photo{
+    object-fit: cover;
+    height: 200px;
+    width: 100%;
+}
+
+
+
+
