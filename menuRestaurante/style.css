@@ -59,40 +59,123 @@ body{
     justify-content: center;
 }
 
-.item{
+
+
+.btn-item{
     margin: 1rem;
     border: 2px solid var(--color-font-primary);
     padding: 0.4rem;
     border-radius: 10px;
     box-shadow: 2px  1px 1px 0px rgba(93, 96, 7, 0.2);
+    text-transform: capitalize;
+    font-family: var(--ff-secondary);
+    font-size: 1rem;
+    color: var(--color-font-primary);
+}
+
+.btn-item:hover{
+    background: var(--color-font-primary);
+    color: aliceblue;
 }
 
 .container-menu{
-     background: wheat;
      width: 90vw;
      max-width: 1170px;
+     display: grid;
+     grid-template-columns: 1fr 1fr;
 }
 
 .menu{
-    display: flex;
-    flex-direction: row;
-    background: #8e7b11;
-    max-width: 450px;
-
+    display: grid;
+    grid-template-columns: 225px 1fr;
+    max-width: 40rem;
+    gap: 0 1.25rem;
 }
 
-.image{
-    width: 250px;
+img{
+    width: 100%;
     
-    background: red;
+    border: 0.25rem solid var(--color-font-primary);
+    border-radius: 10px;
 }
-
 
 .photo{
     object-fit: cover;
-    height: 200px;
-    width: 100%;
 }
+
+.container-menu{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1rem 1.5rem;
+}
+
+
+.details-header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px dotted;
+    padding: 0.5rem;
+}
+
+
+.details-header h3{
+    font-family: var(--ff-secondary);
+    text-transform: capitalize;
+    letter-spacing: 3px;
+    color: var(--color-font-secundary);
+    font-weight: bold;
+    font-size: 1rem;
+}
+
+.details-header p {
+    color: var(--color-font-primary);
+    font-weight: bold;
+    font-family: var(--ff-secondary);
+    letter-spacing: 2px;
+    font-size: 0.9rem;
+}
+
+.details-body{
+    padding: 1rem 0;
+}
+
+.details-body p{
+    font-family: var(--ff-primary);
+    text-align: left;
+    color: rgb(121, 117, 117);
+    font-weight: 200;
+}
+
+@media (max-width: 920px){
+    .container-menu{
+        grid-template-columns: 1fr;
+        place-items: center;
+    }
+}
+
+
+
+@media (max-width: 768px){
+    
+    .container-menu{
+        grid-template-columns: 1fr;
+        place-items: center;
+    }
+   
+    .menu{
+        grid-template-columns: 1fr;
+    }
+
+
+    img{
+        height: 300px;
+    }
+
+    
+}
+
+
 
 
 
