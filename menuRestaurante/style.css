@@ -152,6 +152,10 @@ img{
         grid-template-columns: 1fr;
         place-items: center;
     }
+
+     img{
+        height: 200px;
+    }
 }
 
 
