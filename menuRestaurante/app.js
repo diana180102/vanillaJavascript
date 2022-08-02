@@ -130,15 +130,16 @@ function displayMenuItems(menuItems) {
 
 //función para filtrar los menus por categoria
 function menuButtons() {
-  //
+  
+  /* Evaluamos cada categoría del menu para luego evaluar si se encuentra dentro del MAP */
    const categories = menu.reduce(
-   //Toma un valor y evalua cada item
+
+   //Iteramos sobre cada categoria del mapa
     function (value, item) {
 
-      /* Se evalua SI, el valor NO se encuentra 
-         dentro de una de las categoria del map, entonces
-        
-       */
+      /* SI, la categoria no esta incluida 
+         dentro del mapa entonces, hacemos push
+      */
        if(!value.includes(item.category)){
          value.push(item.category);
        }
@@ -148,7 +149,10 @@ function menuButtons() {
       ['all']
    );
 
+
+    //Retornamos todas las categorias del map 
    const categoryBtn = categories.map(
+    
     function (category) {
       return `<button class="btn-item" data-id=${category}>${category}</button>`;
     }).join('');
@@ -156,19 +160,28 @@ function menuButtons() {
     btnContainer.innerHTML = categoryBtn;
     console.log(btnContainer);
 
+    //Seleccionamos todos los botones
     const filterbtn = btnContainer.querySelectorAll('.btn-item');
      
      console.log(filterbtn);
-
+      
+     //Recorremos cada botón para escuchar el evento donde se dio clic
      filterbtn.forEach((btn)=>{
       btn.addEventListener('click', (e)=>{
+
+        //identificamos el id del boton al que se le dio clic
         const category = e.currentTarget.dataset.id;
+         
+        //Filtramos el menu
         const menuCategory = menu.filter((menuItem)=>{
-           if(menuItem.category== category){
+            //SI categoria es IGUAL a la categoria de los productos del menu, entonces retornara los productos
+          if(menuItem.category == category){
             return menuItem;
            }
         });
+        
 
+        //Si categoria es igual a ALL, entonces mostrara todos los productos
         if (category === 'all') {
           displayMenuItems(menu);
         }else{
