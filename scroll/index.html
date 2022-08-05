@@ -4,49 +4,61 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css">
      <link rel="stylesheet" href="styles.css">
 
     <title>Document</title>
 </head>
 <body>
 
-     <header>
-       
-        <div class="container-nav">
-            <img src="" alt="" class="logo">
+     <header class="header" id="home">
+        
+        <div class="container-nav" id="container-nav">
+            
+            <div class="nav-header">
+                <img src="svg/logo.svg" alt="" class="logo">
+                 <button class="btn-bar">
+                    <i class="fa-solid fa-bars"></i>
+                 </button>
+            </div>
+
             <nav class="nav">
-                <ul>
-                    <li class="nav-item"></li>
-                    <li class="nav-item"></li>
-                    <li class="nav-item"></li>
-                    <li class="nav-item"></li>
+                <ul class="nav-links">
+                    <li class="nav-item"><a href="#home">home</a></li>
+                    <li class="nav-item"><a href="#about">about</a></li>
+                    <li class="nav-item"><a href="#services">services</a></li>
+                    <li class="nav-item"><a href="#features">features</a></li>
+                    
                 </ul>
             </nav>
         </div>
 
         <div class="hero">
             <h1>scroll project</h1>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem, nam.</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur et distinctio voluptas similique unde voluptatem architecto sapiente ducimus necessitatibus ipsam.</p>
             <button class="hero-btn">explore tours</button>
         </div>
      </header>
 
-     <section id="about">
+     <section id="about" class="sections">
         <h2>about <span class="span-title">us</span></h2>
      </section>
 
-     <section id="services">
+     <section id="services" class="sections">
         <h2>our <span class="span-title">services</span></h2>
      </section>
 
-     <section id="tours" >
+     <section id="tours"  class="sections">
         <h2>features <span class="span-title">tours</span></h2>
      </section>
 
 
      <footer id="footer">
-         <h3>Copyright © Backroads Travel Tours Company 2022. All Rights Reserved</h3>
+         <h3>Copyright © Backroads Travel Tours Company <span id="date">2020</span> All Rights Reserved</h3>
      </footer>
+      <a class="nav-item top-link" href="#home">
+      <i class="fas fa-arrow-up"></i>
+    </a>
 
      
     

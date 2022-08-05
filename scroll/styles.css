@@ -1,0 +1,265 @@
+
+:root{
+    --color-font-primary: #fff;
+    --color-font-secundary:rgb(6, 13, 57);
+    --color-font-ternary:rgb(13, 132, 164);
+
+}
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing:border-box;
+}
+
+body{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+li{
+    list-style: none;
+}
+
+a{
+    text-decoration: none;
+}
+
+button{
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+img{
+    display: block;
+}
+
+
+.header{
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: space-between;
+    align-items: center;
+    height: 100vh;
+    background: linear-gradient(rgba(63, 207, 212, 0.5), rgba(0, 0, 0, 0.7)),
+                url(img/hero-bcg.jpeg), center no-repeat;
+    background-size: cover;            
+    
+}
+
+.container-nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    padding: 1rem 1.8rem;
+    
+}
+
+.logo{
+   
+   height: 50px;
+    
+}
+
+.btn-bar {
+    display: none;
+}
+
+.nav ul {
+    display: flex;
+    flex-direction: row;
+}
+
+.nav-item{
+    margin-left: 2rem;
+}
+
+.nav-item a{
+    color: var(--color-font-primary);
+    text-transform: capitalize;
+    font-size: 1.4rem;
+}
+
+.hero{
+    margin: auto 0;
+    max-width: 40rem;
+    display: flex;
+    flex-flow:column nowrap;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.hero h1{
+    color: var(--color-font-primary);
+    letter-spacing: 2px;
+    font-size: 4rem;
+    text-transform: uppercase;
+    text-align: center;
+    margin-bottom: 1rem;
+}
+
+.hero p{
+    text-align: center;
+    font-weight: 100;
+    color: var(--color-font-primary);
+    font-family: Arial, Helvetica, sans-serif;
+    line-height: 1.6rem;
+}
+
+.hero-btn{
+    background: transparent;
+    padding: 1rem;
+    border-color: var(--color-font-primary);
+    color: var(--color-font-primary);
+    text-transform: uppercase;
+    width: 200px;
+    margin-top: 1.5rem;
+    letter-spacing: 3px;
+}
+
+.sections{
+    height: 90vh;
+    padding: 1rem;
+}
+
+.sections h2{
+    text-align: center;
+    font-size: 3rem;
+    text-transform: uppercase;
+    color: var(--color-font-secundary);
+    
+    
+}
+
+.span-title{
+    color: var(--color-font-ternary);
+}
+
+#about, #tours{
+    background: rgb(245, 242, 242);
+}
+
+#footer{
+    background-color: var(--color-font-ternary);
+    text-align: center;
+    padding: 3rem;
+    color: #fff;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    letter-spacing: 2px;
+}
+
+.fixed-nav{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background: var(--color-font-primary);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);;
+}
+
+.top-link {
+    font-size: 1.25rem;
+    position: fixed;
+    bottom: 3rem;
+    right: 3rem;
+    background: var(--color-font-secundary);
+    width: 2rem;
+    height: 2rem;
+    display: grid;
+    place-items: center;
+    border-radius: 10px;
+    color: rgb(209, 32, 32);
+    animation: bounce 2s ease-in-out infinite;
+    visibility: hidden;
+    z-index: -100;
+}
+
+.show-link {
+  visibility: visible;
+  z-index: 100;
+}
+
+
+@media (max-width: 720px){
+    
+    
+
+    .container-nav{
+        background-color: var(--color-font-primary);
+        display: block;      
+        
+    } 
+
+    .nav-header{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        /* background: red; */
+        width: 100%;
+       
+    }
+
+    .nav{
+        display: none;
+    }
+
+    
+    
+    .nav-show{
+        display: block;
+        
+    }
+
+    
+
+    .nav-item a{
+        color: var(--color-font-secundary);
+        
+        
+    }
+
+    .nav ul{
+        flex-direction: column;
+        
+       
+        
+    }
+
+    .nav ul li{
+        display: block;
+        padding: 0.5rem 0rem;
+        letter-spacing: 2px;
+        /* background: rebeccapurple; */
+        margin:0
+    }
+
+    .btn-bar{
+        display: block;
+        background: transparent;
+        border: none;
+        font-size: 2rem;
+        cursor: pointer;
+    }
+
+    .btn-bar:hover{
+        color: var(--color-font-ternary);
+        transition:  1s ease ;
+        transform: rotate(90deg);
+       
+        
+        
+    }
+}
+
+@media (max-width: 480px){
+    
+    .hero{
+        max-width: 25rem;
+    }
+
+    .hero h1{
+        font-size: 2.8rem;
+    }
+}
+
+
