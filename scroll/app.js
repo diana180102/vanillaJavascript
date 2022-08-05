@@ -31,16 +31,20 @@ date.innerHTML = new Date().getFullYear();
 
 /* navbar fijo cuando se hace scroll */
 
-const navbar = document.getElementById('#container-nav');
+const navbar = document.getElementById('container-nav');
 const topLink = document.querySelector('.top-link');
-window.addEventListener('scroll', () =>{
-    const scrollheight = window.scrollY;
+
+window.addEventListener('scroll', () => {
+    
+    //pageYOffset devuelve  el # de pixeles que se ha desplazado en el  documento HTML
+    const scrollheight = window.pageYOffset; 
+    //console.log(scrollheight);
     const navHeight = navbar.getBoundingClientRect().height;
 
     if(scrollheight > navHeight){
-        topLink.classList.add('fixed-nav');
+        navbar.classList.add('fixed-nav');
     }else{
-        topLink.classList.remove('fixed-nav');
+        navbar.classList.remove('fixed-nav');
     }
 
     if(scrollheight > 500){
@@ -50,3 +54,8 @@ window.addEventListener('scroll', () =>{
     }
 
 });
+
+
+
+
+

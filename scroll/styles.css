@@ -51,7 +51,6 @@ img{
     align-items: center;
     width: 100%;
     padding: 1rem 1.8rem;
-    
 }
 
 .logo{
@@ -73,10 +72,14 @@ img{
     margin-left: 2rem;
 }
 
-.nav-item a{
+.nav-item {
     color: var(--color-font-primary);
     text-transform: capitalize;
     font-size: 1.4rem;
+}
+
+.nav-item a:hover{
+    color: var(--color-font-secundary);
 }
 
 .hero{
@@ -154,7 +157,15 @@ img{
     left: 0;
     width: 100%;
     background: var(--color-font-primary);
-    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+.fixed-nav .nav-item {
+    color: var(--color-font-secundary);
+}
+
+.fixed-nav .nav-item:hover{
+    color: var(--color-font-ternary);
 }
 
 .top-link {
