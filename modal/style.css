@@ -130,4 +130,18 @@ button{
 }
 
 
+@media (max-width: 780px){
+  
+    .modal-container{
+        max-width: 400px;
+    }
 
+    .title-modal{
+        font-size: 1.3rem;
+    }
+
+    .modal-container p{
+        font-size: 1rem;
+    }
+
+}
