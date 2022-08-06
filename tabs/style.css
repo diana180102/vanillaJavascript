@@ -75,11 +75,22 @@ img{
     color: cornflowerblue;
 }
 
+.tab-btn.active{
+    background: #fff;
+}
+
 .tab-item{
     background: #fff;
     padding: 2rem;
     position: absolute;
-    
+}
+
+.tab-item{
+    display: none;
+}
+
+.tab-item.active{
+    display: block;
 }
 
 .tab-item h4{
