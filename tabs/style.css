@@ -1,0 +1,98 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,300;0,900;1,300&family=News+Cycle:wght@400;700&family=Square+Peg&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background: rgb(250, 250, 250);
+    font-family: 'Lato', sans-serif;
+}
+
+header{
+    display: grid;
+    place-items: center;
+    margin-top:5rem
+}
+
+.header h1{
+    text-transform: capitalize;
+    letter-spacing: 5px;
+    font-size: 3rem;
+    color: rgb(6, 14, 44);
+    margin-bottom: 0.8rem;
+}
+
+.header p{
+    color: rgb(124, 126, 126);
+    font-size: 1.1rem;
+    margin-bottom: 4rem;
+}
+
+.about{
+    display: grid;
+    grid-template-rows: 22rem 1fr;
+    max-width: 1170px;
+    margin: 0 auto;
+    width: 90vw;
+    
+}
+
+img{
+    width: 100%;
+}
+
+.image img{
+    height: 20rem;
+    object-fit: cover;
+    border-radius: 20px;
+}
+
+.tab{
+    position: relative;
+}
+
+.btn-container{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    border-radius: 20px 0px;
+}
+
+.tab-btn{
+    border: none;
+    background: rgba(91, 87, 87, 0.252);
+    font-size: 1rem;
+    padding: 1.2rem;
+    text-transform: capitalize;
+    letter-spacing: 3px;
+    
+}
+
+.tab-btn:hover{
+    background: #fff;
+    color: cornflowerblue;
+}
+
+.tab-item{
+    background: #fff;
+    padding: 2rem;
+    position: absolute;
+    
+}
+
+.tab-item h4{
+    text-transform: capitalize;
+    letter-spacing: 3px;
+}
+
+.tab-item p{
+    font-size: 1.1rem;
+}
+
+
+
+
+
+
