@@ -1,3 +1,6 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,300;0,900;1,300&family=News+Cycle:wght@400;700&family=Square+Peg&display=swap');
+
+
 *{
     padding: 0;
     margin: 0;
@@ -6,6 +9,7 @@
 
 body{
     background: rgb(245, 241, 241);
+    font-family: 'Lato', sans-serif;
 }
 
 img{
@@ -20,6 +24,7 @@ img{
 .section-container{
     display: grid;
     gap: 2rem;
+    margin-top: 4rem;
     
 }
 
@@ -27,6 +32,27 @@ img{
     object-fit: cover;
 }
 
+
+
+.details h3{
+    color: rgb(8, 114, 159);
+    font-size: 2rem;
+    letter-spacing: 3px;
+    margin-bottom: 0.4rem;
+}
+
+.details h5{
+    font-weight: bold;
+    font-size: 1rem;
+    letter-spacing: 5px;
+    margin-bottom: 2rem;
+}
+
+.details p{
+    font-size: 1.1rem;
+    color: rgb(82, 84, 84);
+    margin-bottom: 2rem;
+}
 
 .contador-container{
     display: flex;
@@ -36,12 +62,34 @@ img{
 
 .contador{
     margin: 1rem;
-    padding: 1.5rem;
-    background: red;
+    height: 80px;
+    width: 80px;
+    background: rgb(9, 3, 41);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.contador h4{
+    color: #fff;
+    font-size: 2rem;
+}
+
+.contador span{
+    color: #fff;
+    text-transform: uppercase;
+    font-weight: 100;
 }
 
 
 
+@media (min-width: 990px){
+    .section-container{
+        grid-template-columns: 1fr 1fr;
+    }
+}
 
 
 
