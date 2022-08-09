@@ -40,7 +40,7 @@ const hours = futureDate.getHours();
 const minutes = futureDate.getMinutes();
 const dates = futureDate.getDate();
 
-mon = months[month]; //mon sera igual al mes que se encuentre dentro del mapa
+mon = months[month]; //mon sera igual al mes que se encuentre dentro del map
 
 const weekday = weekdays[futureDate.getDay()];
 
@@ -52,8 +52,11 @@ console.log(futureTime);
 
 //Obtener tiempo(remaining) restante
 function getRemainingTime() {
+    
     const hoy = new Date().getTime();
-    const t = futureTime - today;
+    const t = futureTime - hoy;
+
+    
 
     // 1s = 1000ms
     // 1m = 60s
@@ -61,13 +64,20 @@ function getRemainingTime() {
     // 1d = 24hr
     // values in miliseconds
 
-    const oneDay = 24 * 60 *60 *1000;
-    const oneHour = 60*60*1000;
-    const oneMinute = 60*1000;
+    const oneDay = 24 * 60 * 60 *1000;
+    const oneHour = 60 * 60 * 1000;
+    const oneMinute = 60 * 1000;
 
     let days = t / oneDay;
-    days = Math.floor(days);
     let h = t / oneHour;
+    let m = t / oneMinute;
+
+    days = Math.floor(days);
+    h = Math.floor(h);
+    m = Math.floor(m);
+
+
+    console.log(h);
     
 }
 
