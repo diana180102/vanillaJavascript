@@ -69,16 +69,33 @@ function getRemainingTime() {
     const oneMinute = 60 * 1000;
 
     let days = t / oneDay;
-    let h = t / oneHour;
-    let m = t / oneMinute;
+    let h = (t % oneDay) / oneHour;
+    let m = (t % oneHour) / oneMinute;
+    let s = (t % oneMinute) / 1000;
 
     days = Math.floor(days);
     h = Math.floor(h);
     m = Math.floor(m);
+    s = Math.floor(s);
+
+    const value =[days, h, m, s];
 
 
-    console.log(h);
+     
+    itemCount.forEach((item, index) =>{
+       item.innerHTML = value[index];
+    });
+
+    if(t<0){
+      clearInterval(countdown);
+      count.innerHTML = '<h4 class="expired"> sorry, this giveway has expired </h4>'
+    }
+
+    console.log(m);
     
 }
+
+//countdown
+let countdown = setInterval(getRemainingTime, 1000);
 
 getRemainingTime();

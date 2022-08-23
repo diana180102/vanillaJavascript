@@ -180,7 +180,7 @@ img{
     place-items: center;
     border-radius: 10px;
     color: rgb(209, 32, 32);
-    animation: bounce 2s ease-in-out infinite;
+    animation: bounce 1s ease-in-out infinite;
     visibility: hidden;
     z-index: -100;
 }
@@ -212,6 +212,10 @@ img{
 
     .nav{
         display: none;
+    }
+
+    .nav-item{
+        color: var(--color-font-secundary);
     }
 
     
