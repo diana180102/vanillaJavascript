@@ -1,0 +1,126 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: rgb(243, 240, 235);
+}
+
+.section-container{
+    background: white;
+    width: 450px;
+    height: auto;
+    margin: 0 auto;
+    margin-top: 5rem;
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 3rem 0rem 4rem 0rem;
+    
+}
+
+.grocery-form h2{
+    margin-bottom: 1.5rem;
+    font-family: Arial, Helvetica, sans-serif;
+    letter-spacing: 3px;
+    color: rgb(33, 33, 124);
+    font-size: 1.2rem;
+}
+
+.alert{
+    background: rgb(112, 240, 150);
+    color: green;
+    display: grid;
+    align-items: center;
+    text-align: center;
+    height: 1.25rem;
+    margin-bottom: 1rem;
+    
+}
+
+form{
+    width: 90%;
+    
+    /* //background: black; */
+}
+
+.form-control{
+    width: 100%;
+    /* //background-color: red; */
+    
+    
+}
+
+input{
+    width: 60%;
+    height: 30px;
+    border: none;
+    background-color: rgba(240, 236, 232, 0.308);
+    border-radius: 5px 0px 0px 5px;
+    padding-left: 10px;
+    font-size: 0.9rem;
+}
+
+.btn-submit{
+    background-color: rgba(75, 215, 240, 0.788);
+    height: 30px;
+    width: 20%;
+    border-radius: 0px 5px 5px 0px;
+    letter-spacing: 1px;
+    font-size: 0.9rem;
+    border: none;
+}
+.container-grocery{
+    width: 70%;
+    
+}
+
+.items-add{
+    /* background-color: blue; */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: row;
+    margin-top: 3rem;
+}
+
+.items-add p{
+    font-size: 1.1rem;
+    font-family: Arial, Helvetica, sans-serif;
+    letter-spacing: 2px;
+}
+
+.icons{
+    display: flex;
+    gap: 15px;
+}
+
+.fa-pen-to-square{
+    color: green;
+    font-size: 0.8rem;
+}
+
+.fa-trash{
+    color: red;
+    font-size: 0.8rem;
+}
+
+.btn-clear{
+    color: brown;
+    background: transparent;
+    border: none;
+    margin-top:1.5rem;
+    letter-spacing: 1px;
+    font-size: 1rem;
+}
+
+
+
+
+
+
